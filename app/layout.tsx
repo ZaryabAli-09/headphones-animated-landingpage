@@ -1,7 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Varela, Poppins } from "next/font/google";
+import MouseFollowerWrapper from "@/app/features/MouseFollower/MouseFollower";
+
 import "./globals.css";
 
+const valera = Varela({
+  variable: "--font-varela",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: "400",
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,8 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${valera.variable} ${poppins.variable}  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Global mouse follower */}
+        <MouseFollowerWrapper />
         {children}
       </body>
     </html>

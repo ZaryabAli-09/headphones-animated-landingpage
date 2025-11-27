@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #aa6d6b;
+  --color-brand-dark: #151616;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-varela: "Varela Round", sans-serif;
+}
