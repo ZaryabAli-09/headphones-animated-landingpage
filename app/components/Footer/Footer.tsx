@@ -19,7 +19,7 @@ const fadeUp = (delay: number) => ({
 
 export default function Footer() {
   return (
-    <footer className="bg-[#9A6866] text-white px-10 md:px-20 py-16 font-poppins">
+    <footer className="bg-[#9A6866] text-white px-10 md:px-20 py-16 font-poppins overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <motion.div
           variants={fadeUp(0.2)}
