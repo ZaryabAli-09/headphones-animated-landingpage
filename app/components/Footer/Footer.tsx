@@ -155,7 +155,7 @@ export default function Footer() {
         viewport={{ once: true }}
         className="text-center text-sm mt-12"
       >
-        © 2024. All Rights Reserved || The Coding Journey
+        © {new Date().getFullYear()} 2024. All Rights Reserved || SYNC / VIBES
       </motion.div>
     </footer>
   );
